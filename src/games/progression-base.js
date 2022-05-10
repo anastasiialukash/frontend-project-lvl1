@@ -16,7 +16,7 @@ const getQuestionAndCorrectAnswer = () => {
   }
 
   const valueToRemove = progression[indexToRemove];
-  const question = progression.join(' ').replace(valueToRemove, '...');
+  const question = progression.join(' ').replace(valueToRemove, '..');
   const correctAnswer = valueToRemove.toString();
 
   return { question, correctAnswer };
