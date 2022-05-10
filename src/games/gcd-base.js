@@ -5,8 +5,9 @@ const rules = 'Find the greatest common divisor of given numbers?';
 
 const getCorrectAnswer = (number1, number2) => {
   let maxCommonDivisor = 0;
+  const minValue = number2 > number1 ? number1 : number2;
 
-  for (let i = 1; i < number1 / 2; i += 1) {
+  for (let i = 1; i < minValue; i += 1) {
     let divisor = i;
     if (number1 % divisor === 0 && number2 % divisor === 0) {
       divisor = i;
